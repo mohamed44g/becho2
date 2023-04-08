@@ -372,7 +372,11 @@ hr {
     display: none;
   }
   .navpar {
-    margin: 0 20px;
+    margin: 5px 20px;
+  }
+  
+  .navpar .nav-icons {
+  margin-top: 0px;
   }
   .navpar .logo img {
     width: 100px;
@@ -400,7 +404,7 @@ hr {
     margin: 0;
   }
   hr {
-    margin-top: 25px;
+    margin-top: 20px;
   }
   .introduce {
     margin-top: -600px;
