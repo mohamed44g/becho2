@@ -26,6 +26,10 @@
   padding: 30px;
 }
 
+.side-width {
+  width: 400px;
+}
+
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -98,7 +102,12 @@
   background-color: #818181;
   border-radius: 15px;
   border: 0;
-  margin-left: 10px;
+  text-align: center;
+}
+.mood .btn-dark span, .mood .btn-light span {
+  position: relative;
+  top: -8px;
+  left: 5px;
 }
 .mood .active-btn {
   display: none;
@@ -110,6 +119,10 @@
   --secondary_text: #858E96;
   --boxs: #333;
   background-color: var(--bg);
+}
+.dark-theme .Menu-icon {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
 }
 
 .light-theme {
@@ -123,6 +136,10 @@
 }
 .light-theme .closebtn {
   color: var(--primary_text);
+}
+.light-theme .Menu-icon {
+  -webkit-filter: invert(0%) sepia(83%) saturate(7500%) hue-rotate(356deg) brightness(82%) contrast(115%);
+          filter: invert(0%) sepia(83%) saturate(7500%) hue-rotate(356deg) brightness(82%) contrast(115%);
 }
 
 body {
@@ -158,8 +175,10 @@ body {
   margin-top: 35px;
 }
 .navpar .logo img {
-  width: 277px;
-  height: 35px;
+  width: 250px;
+  height: 64px;
+  -webkit-filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
+          filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
 }
 .navpar .nav-icons .btn-back {
   width: 100px;
@@ -248,7 +267,111 @@ hr {
   width: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+.true {
+  background-color: #d4edda;
+  border-radius: 5px;
+  width: 60%;
+  height: 50px;
+  margin-top: 10px;
+  border: 2px solid #c3e6cb;
+}
+.true div,.false div {
+  position: relative;
+  top: -13px;
+}
+
+.true .answer-label {
+  color: #155724;
+}
+
+.false {
+  background-color: #f8d7da;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  margin-top: 10px;
+  border: 2px solid #f5c6cb;
+}
+
+
+.false .answer-label {
+  color: #58151c;
+}
+
+.radio-con {
+  position: relative;
+  right: 10px;
+}
+
+
+
+@media screen and (min-height: 300px) and (max-width: 400px) {
+  .con {
+    width: 90%;
+  }
+  .btn-back-side {
+    display: block;
+  }
+  .side-width {
+    width: 80%;
+  }
+  .navpar {
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+  .navpar .logo img {
+    width: 150px;
+    height: 40px;
+  }
+  .navpar .nav-icons .Menu-icon {
+    width: 40px;
+  }
+  .navpar .nav-icons .btn-back {
+    width: 70px;
+    height: 28px;
+    display: none;
+    position: relative;
+    top: -15px;
+    left: 20px;
+  }
+  .Questions-con {
+    width: 100%;
+    height: 500px;
+    padding: 20px 20px;
+  }
+  .Questions-con .Question p {
+    font-size: 14px;
+  }
+  .Questions-con input[type=submit] {
+    width: 60px;
+    height: 30px;
+  }
+  .Questions-con .answer-label {
+    font-size: 14px;
+  }
+  .Questions-con .Questions-footer .icons {
+    margin-top: 28px;
+  }
+  .Questions-con .Questions-footer img {
+    margin-left: 10px;
+    width: 30px;
+  }
+  .true,.false {
+    width: 100%;
+    height: 40px;
+  }
+  .true div,.false div {
+    position: relative;
+    top: -20px;
+  }
+
+  .radio-con {
+    position: relative;
+    right: 10px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
   .con {
     width: 95%;
   }
@@ -264,7 +387,7 @@ hr {
   }
   .navpar .logo img {
     width: 150px;
-    height: 30px;
+    height: 40px;
   }
   .navpar .nav-icons .Menu-icon {
     width: 40px;
@@ -298,6 +421,19 @@ hr {
   .Questions-con .Questions-footer img {
     margin-left: 10px;
     width: 35px;
+  }
+
+  .true,.false {
+    width: 100%;
+    height: 40px;
+  }
+  .true div,.false div {
+    position: relative;
+    top: -20px;
+  }
+  .radio-con {
+    position: relative;
+    right: 10px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -343,6 +479,19 @@ hr {
   .Questions-con .Questions-footer img {
     margin-left: 10px;
     width: 35px;
+  }
+
+  .true,.false {
+    width: 60%;
+    height: 40px;
+  }
+  .true div,.false div {
+    position: relative;
+    top: -20px;
+  }
+  .radio-con {
+    position: relative;
+    right: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -390,6 +539,18 @@ hr {
     margin-left: 10px;
     width: 35px;
   }
+  .true,.false {
+    width: 60%;
+    height: 40px;
+  }
+  .true div,.false div {
+    position: relative;
+    top: -20px;
+  }
+  .radio-con {
+    position: relative;
+    right: 10px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .con {
@@ -435,5 +596,9 @@ hr {
   .Questions-con .Questions-footer img {
     margin-left: 10px;
     width: 35px;
+  }
+  .radio-con {
+    position: relative;
+    right: 10px;
   }
 }

@@ -17,8 +17,8 @@
             <a href="#">كويزات</a>
             <hr>
             <div class="mood">
-                <button class="btn-dark active-btn">dark <img src="../Images/icon-moon.svg" alt="icon"></button>
-                <button class="btn-light">light <img src="../Images/icon-sun.svg" alt="icon"></button>
+                <button class="btn-dark active-btn"><span>dark</span><img src="../Images/icon-moon.svg" alt="icon"></button>
+                <button class="btn-light"><span>light</span> <img src="../Images/icon-sun.svg" alt="icon"></button>
             </div>
             
             <a href="../index.html"><button class="btn-back-side">عودة</button></a>
@@ -28,12 +28,12 @@
     <div class="con">
         <div class="navpar">
             <div class="logo">
-                <img src="../Images/H Logotype Orange copy.png" alt="logo">
+                <img src="../Images/H Logotype Orange.svg" alt="logo">
             </div>
     
             <div class="nav-icons">
                 <a href="../index.html"><button class="btn-back">عودة</button></a>
-                <img onclick="openNav()" class = "Menu-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3ZQQoCMRBFwRxPPXN+5yYjiPdQZqubAYNBqYLepyGLPNIaAAAAByS5JLlW1eOXZ9+h934+svBt9WEnzt3Cr/ZrkGT7gyu9jTFObwsCAPAtUUu1/F2slmpiHna1BADAHFFLtbp41FKppfK3BAAA0D7xBH8Vz6KPQsKFAAAAAElFTkSuQmCC">
+                <img onclick="openNav()" class = "Menu-icon" src="../Images/icons8-menu-96-_3_.svg" a>
             </div>
         </div>
 
@@ -50,6 +50,7 @@
     <script>
         const dark = document.querySelector(".btn-dark");
         const light = document.querySelector(".btn-light");
+        document.addEventListener('contextmenu', event => event.preventDefault());
     
         let theme = localStorage.getItem("theme");
         if (theme != null) {

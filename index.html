@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>BESHOSAURUS</title>
@@ -19,6 +18,7 @@
             <a href="pages/Questions.html">اسئلة عامة</a>
             <a href="#">امتحانات</a>
             <a href="pages/Quiz.html">كويزات</a>
+            <a href="#">اسئلة الطلبة</a><span>(يجاب عنها كل اخر باب)</span>
             <hr>
             <div class="mood">
                 <button class="btn-dark active-btn">dark <img src="Images/icon-moon.svg" alt="icon"></button>
@@ -31,7 +31,7 @@
         <div class="home-page">
             <div class="navpar d-flex justify-content-between">
                 <div class="logo">
-                    <img src="Images/H Logotype Orange copy.png" alt="logo">
+                    <img src="Images/H Logotype Orange.svg" alt="logo">
                 </div>
     
                 <div class="links">
@@ -44,7 +44,7 @@
     
                 <div class="nav-icons">
                     <a href="pages/profile.html"><img class = "user-icon" src="data:image/png;base64,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" alt="icon"></a>
-                    <img onclick="openNav()" class = "Menu-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3ZQQoCMRBFwRxPPXN+5yYjiPdQZqubAYNBqYLepyGLPNIaAAAAByS5JLlW1eOXZ9+h934+svBt9WEnzt3Cr/ZrkGT7gyu9jTFObwsCAPAtUUu1/F2slmpiHna1BADAHFFLtbp41FKppfK3BAAA0D7xBH8Vz6KPQsKFAAAAAElFTkSuQmCC">
+                    <img onclick="openNav()" class = "Menu-icon" src="Images/icons8-menu-96-_3_.svg" alt="menu-icon">
                 </div>
             </div>
             <hr>
@@ -164,8 +164,11 @@
                 <h1>تعريف المنصة</h1>
             </div>
 
-            <div class="video text-center shadow">
-                <img src="https://img.icons8.com/external-neu-royyan-wijaya/96/F78121/external-circle-neu-music-neu-royyan-wijaya.png" alt="icon">
+            
+            <img id = "video-icon" src="https://img.icons8.com/external-neu-royyan-wijaya/96/F78121/external-circle-neu-music-neu-royyan-wijaya.png" alt="icon">
+
+            <div class="video-content text-center">
+                <video id = "video" class="video" src="Video/منصة بيشوسورس - نهائي.mp4" controls="nofullscreen nodownload noremoteplayback noplaybackrate foobar"></video>
             </div>
         </div>
 
@@ -177,56 +180,52 @@
             <div class="feedback-cards d-flex flex-row flex-wrap justify-content-between">
 
 
-                    <div class="feedback-card shadow">
-                        <div class="feedback-detial d-flex flex-row">
-                            <img class = "feedback-avatar" src="Images/avatar.png" alt="avatarIcon">
-                            <h5>Mohamed badry</h5>
-                        </div>
-    
-                        <div class="feedback-comment">
-                            <p>أحببت كيفية تنظيم المواد في الموقع وسهولة 
-                                .الوصول إلى الفيديوهات والأسئلة والامتحانات</p>
-                        </div>
-                    </div>
-
-
                 <div class="feedback-card shadow">
                     <div class="feedback-detial d-flex flex-row">
-                        <img class = "feedback-avatar" src="Images/avatar.png" alt="avatarIcon">
-                        <h5>Ismail abobaker</h5>
+                        <img loading="lazy" class = "feedback-avatar" src="Images/avatar-svgrepo-com (1).svg" alt="avatarIcon">
+                        <h5>Nora mostafa</h5>
                     </div>
 
                     <div class="feedback-comment">
-                        <p>أجد أن الأسئلة  في الموقع تساعدني كثيرًا في 
-                            تقييم مدى فهمي للمواد وتحديد المناطق 
-                            . التي أحتاج إلى مزيد من العمل عليها</p>
+                        <p>أستاذنا واخونا الكبير وحصته دايما جميلة وخفيفة ربنا يكرمه بكل الخير.</p>
                     </div>
-                </div> 
+                </div>
 
-                <div class="feedback-card shadow">
-                    <div class="feedback-detial d-flex flex-row">
-                        <img class = "feedback-avatar" src="Images/avatar.png" alt="avatarIcon">
-                        <h5>Ismail abobaker</h5>
-                    </div>
 
-                    <div class="feedback-comment">
-                        <p>أجد أن الأسئلة  في الموقع تساعدني كثيرًا في 
-                            تقييم مدى فهمي للمواد وتحديد المناطق 
-                            . التي أحتاج إلى مزيد من العمل عليها</p>
-                    </div>
-                </div> 
+            <div class="feedback-card shadow">
+                <div class="feedback-detial d-flex flex-row">
+                    <img loading="lazy" class = "feedback-avatar" src="Images/avatar.png" alt="avatarIcon">
+                    <h5>Mohamed dawy</h5>
+                </div>
 
-                <div class="feedback-card shadow">
-                    <div class="feedback-detial d-flex flex-row">
-                        <img class = "feedback-avatar" src="Images/avatar.png" alt="avatarIcon">
-                        <h5>Ismail abobaker</h5>
-                    </div>
+                <div class="feedback-comment">
+                    <p>حقيقى رغم صغر سنه لكن ارتحت لشرحو البسيط الى بيوصلك المعلومه بسهوله جدا والحل الكتير الى خلى الماده فى جيبونا حرفيا فبجد ربنا يباركله ويزيده من نعيم.</p>
+                </div>
+            </div> 
 
-                    <div class="feedback-comment">
-                        <p>أجد أن الأسئلة  في الموقع تساعدني كثيرًا في 
-                            تقييم مدى فهمي للمواد وتحديد المناطق 
-                            . التي أحتاج إلى مزيد من العمل عليها</p>
-                    </div>
+            <div class="feedback-card shadow">
+                <div class="feedback-detial d-flex flex-row">
+                    <img loading="lazy" class = "feedback-avatar" src="Images/avatar-svgrepo-com (1).svg" alt="avatarIcon">
+                    <h5>Hanan mohamed</h5>
+                </div>
+
+                <div class="feedback-comment"> 
+                    <p>مستر بيشوى من احسن الاساتذة للى ساعدتنى حبيت طريقة شرحو البسيطة وقدرت على توصيل
+                    المعلومة ربنا يكرمك على قد طيبتك وجدعنتك.
+                    </p>
+                </div>
+            </div> 
+
+            <div class="feedback-card shadow">
+                <div class="feedback-detial d-flex flex-row">
+                    <img loading="lazy" class = "feedback-avatar" src="Images/avatar.png" alt="avatarIcon">
+                    <h5>Eslam abd el hamed</h5>
+                </div>
+
+                <div class="feedback-comment">
+                <p>فخر العرب بجد دى حاجة حلوة اننا نغير المسمى التلقيدى للاستاذ انه لازم 60 سنة وشعره ابيض مع كامل احترامى للاساتذة دول قيمة وقامة.</p>
+                </div>
+            </div> 
                 </div> 
 
                 <!-- <div class="feed-icon">
@@ -237,17 +236,40 @@
 
     </div>
 
+    <footer>
+        <div class="container">
+            <div class="footer-content d-flex justify-content-around flex-wrap">
+                <div class="footer-icons d-flex justify-content-center">
+                    <a href="https://www.facebook.com/profile.php?id=100041424555685&mibextid=ZbWKwL"><img id = "facebook" src="Images/facebook-svgrepo-com (1).svg" alt="facebook"></a>
+                    <a href=""><img id = "instgram" src="Images/instagram-svgrepo-com (3).svg" alt="instgram"></a>
+                    <a href="http://wa.me/+201017893980?text="><img id = "whatsApp" src="Images/whatsapp-svgrepo-com (1).svg" alt="whatsApp"></a>
+                </div>
+    
+                <div class="footer-text">
+                    <h6>Developed by : Mohamed badry</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 <script>
     const dark = document.querySelector(".btn-dark");
     const light = document.querySelector(".btn-light");
     const feedForward = document.getElementById("feed-forward");
     const c = document.querySelector(".feedback-card");
+    const video_icon = document.querySelector("#video-icon");
+    const video = document.getElementById("video");
 
     let theme = localStorage.getItem("theme");
     if (theme != null) {
         changeTheme(theme);
     }
+
+    video.addEventListener("click", function () {
+            video_icon.style.visibility = "hidden";
+            console.log("asdasd");
+    })
     
 
     dark.addEventListener("click",function () {

@@ -51,6 +51,18 @@ body {
   transition: 0.3s;
 }
 
+.sidenav a:nth-of-type(5) {
+  display: inline-block;
+}
+
+.sidenav span {
+  color: var(--secondary_text);
+}
+
+.sidenav hr {
+  color: var(--secondary_text);
+}
+
 .sidenav a:hover {
   color: #f1f1f1;
 }
@@ -83,6 +95,7 @@ body {
 }
 .mood img {
   width: 25px;
+  margin-right: 5px;
 }
 .mood .btn-dark, .mood .btn-light {
   width: 120px;
@@ -108,7 +121,7 @@ body {
   width: 100%;
   height: 950px;
   background-repeat: no-repeat;
-  background-image: url("https://lh3.googleusercontent.com/EFhCGqDc0ttP_GXrrmoBCtCeEF9OG-chvQYaYsr9EmoDDSprUAq0pgBCy9qgZcrRkDPcyqjivpHuJ9pWOkbbXFgrbrybB-vzq7Wx-p921ahJ2bicKNenSf97BEaiXlDO_H_lgIbyp9NidfUNZMntBmTtknaOpAWUu9uzzrfn0UAqAZbAT_6SqVNFF8hI2BS7J9IhfcZdHzZgMksgP0mPPf5KPfJ9hB6vnhsFv50OCFc0WBIpiXoNBhZCU0xq3nBJbRWrvXABQguyxQ7ColtJwrDbAVuhVuVzCIW4r6od6GfIfgcu6XNqXkg-iF9SzyO-icujfPj3tlVGWLhahF1YfNcuh4hl4_56K6L-xzo1lYvbn9N4xO5l6Mr0Cj5at6WE7xgTNszhXS_h8PMuoIj0Q15Kt3QSg2kVUHNVmJUEsHb-0mvEYdinAoCGqTf1MsRnQ8fpM3qjgqiHqIfuqY1abqnEVh30CI89Im0SjOumXqOR3GTdX5jOm2yUYIkOHXFcNHsUPrTlZ5-wFQpAGOdxbztmDvm7hglTdQUZBtNg9tmprcHcApNiwEeJnG_N2fto9yvS2XPxnnrFtD0oDZTZZQdWWhwS8oLS-iqtNmborTcqU7x3P_pAbI12Btj515358lVEB9PmmloHWUjdxTp5b9fVlkqiljhBKi2AoRjOpG3ldXh4p_HMpSRFRAq7050Yi1VedRk4frguK9ZGf-nb6KtasvRxuytyq2YFwF99wOxfDx4BEXqSi2Et-8L61N3ePDVoWfGZBtiD5j1Yqtu2m807DyOsdHzl4rYyHaf4mcjjhWrCcJ9Eb7cMuT9IX1Jxr4xyuUPThLrPF5paJjW1iHbIPNuW-FcZkqZoRLimJUyDs_pdxEihwkAq4JpJHX-QEFFLmiE9m_I4btMwPQlpxLSZ0NQZbhD7KV_nHPSQFhOV=w1605-h903-s-no?authuser=0");
+  background-image: url("../Images/bg-dark-good.jpg");
   background-size: contain;
 }
 .dark-theme .home-content h1 {
@@ -116,6 +129,10 @@ body {
 }
 .dark-theme .home-content p {
   color: #858E96;
+}
+.dark-theme .footer-icons img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
 }
 
 .light-theme {
@@ -131,7 +148,7 @@ body {
   width: 100%;
   height: 950px;
   background-repeat: no-repeat;
-  background-image: url("https://lh3.googleusercontent.com/AyDvA5H047jEnaqXZq8X3weamL94uen3xcnb1EnesNMsogBLlZZhM-ghxJZ6Evrn95waYJEKDsSAITY7esbilhSYt3aLhi6jhyCoCIWH_CRXJtN9N4dtTM0gNcSKrnps6jo7oh1ihqisQTtnPzmHHWFYNqvd-VN6bZaGFY905ZMKfpbqP8G1voUGX8LvgfMVwOJPf45YR3vO4VXgzhCPse-oJgqhbC0Ea106L1AO4RtOseJP2_SNntygfk4Fu3IZWYRhNL4-k7yZAz-mckYI2iVkx5qsEIvlGQvZkw8J-7-M3JjvTiG-DRD6cmU0oj8bCjXY-YY7xvTwcqP2jJcyDRoSAu-uncGnqRI7-BtV4Cq5gCBr26tEMjFwHkH3kPe6S8GhHiVf9WBwoox9c_XLZmW8iy3xQl6oy4Oq6PN02aciCcKWlX4_Iqv-Nsxtcs6bjqlpNrsOPgsg4GVxyiMTLpo2J0ijGF7hVAmod_v4WRFxAOHkD6aew017qVSWKBiliRQfuuU1C46jQyJPMo6rUfSWJEI3ZTMvOgxQewucbSUwcLEePBu4Y8v6p16p1ewI31JX08oAnxVW8ipptfXAU63E9PhYWTypb2d0z5iL4qdow_Wd4qBdgysD1TqXF_K2S7ItWm5a7UJRIqjexQeclPqz66ktgDb5wqaWOYga7DkDYjN6RZ0tlKN38l-R6ODQGA3oYwW2jo9xplf0dl4g142vRMC3rFZFPIMxL8jBG-EstRFf494Py9nonbSnR2J2lNqM4G_KT0yo1q6icNC7GUrR1IjmI5f7rD9_Azk8GlavI5f4J4LcHfmqwk2DDsOTpQGyh6XSEj0QLJkZLt0S-JVLMdzZOpCrssCI0phkGQtpV3r6tRlZGnQ1ptxaMPWhoLqb03nMBOj7g6n3nvVu2qZOsDrvHwMVGzwZ92gIopZB=w1605-h903-s-no?authuser=0");
+  background-image: url("../Images/bg-light-good.jpg");
   background-size: contain;
 }
 .light-theme .links ul li a {
@@ -153,8 +170,10 @@ body {
 }
 
 .navpar .logo img {
-  width: 230px;
+  width: 250px;
   height: 35px;
+  -webkit-filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
+          filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
 }
 .navpar .links ul li {
   display: inline-block;
@@ -177,19 +196,11 @@ body {
 .navpar .nav-icons {
   margin-top: -6px;
 }
-.navpar .nav-icons .btn-regester {
-  width: 150px;
-  height: 45px;
-  margin-left: 50px;
-  background-color: #F78121;
-  color: #fff;
-  font-weight: 500;
-  border: 0;
-  border-radius: 10px;
-}
 .navpar .nav-icons .Menu-icon {
   width: 50px;
   cursor: pointer;
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
 }
 .navpar .nav-icons .user-icon {
   width: 45px;
@@ -241,6 +252,7 @@ hr {
   height: 500px;
   background-color: var(--boxs);
   border-radius: 10px;
+  margin: auto;
 }
 .introduce .introduce-content p {
   font-size: 20px;
@@ -258,10 +270,6 @@ hr {
 
 .featrues {
   margin-top: 200px;
-}
-.featrues .fade-in {
-  -webkit-animation: fadeInRight 1s both;
-          animation: fadeInRight 1s both;
 }
 .featrues .featrues-card {
   width: 280px;
@@ -284,24 +292,28 @@ hr {
 .video-con {
   margin-top: 200px;
 }
+
 .video-con .video {
-  width: 100%;
-  height: 600px;
-  background-color: var(--boxs);
+  width: 90%;
+  margin: 0 auto;
   border-radius: 10px;
 }
-.video-con .video img {
-  padding-top: 250px;
-}
 
+#video-icon{
+  margin: 0 auto;
+  position: relative;
+  top: 340px;
+}
 .feedback {
   margin-top: 200px;
+  width: 95%;
+  margin: 200px auto 0 auto;
 }
 .feedback .feedback-card {
-  width: 47%;
-  height: 300px;
+  width: 45%;
+  height: 270px;
   margin-bottom: 30px;
-  padding: 60px 30px;
+  padding: 40px 30px;
   background-color: var(--boxs);
   border-radius: 10px;
   margin-right: auto;
@@ -318,33 +330,40 @@ hr {
 }
 
 .feedback-comment {
-  padding: 20px 82px;
+  width: 90%;
+  position: relative;
+  top: 20px;
+  left: -20px;
   font-size: 20px;
   font-weight: 300;
 }
 
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(50%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-  }
+footer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--boxs);
 }
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(50%, 0, 0);
-            transform: translate3d(50%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
+footer .footer-icons {
+  padding: 8px 70px;
 }
+footer .footer-icons img {
+  width: 55px;
+  margin: 0 5px;
+}
+footer #facebook {
+  width: 46px;
+  margin-top: 5px;
+}
+footer .footer-text {
+  padding: 25px 70px;
+}
+footer .footer-text h6 {
+  font-weight: 700;
+  color: var(--primary_text);
+}
+
 @media only screen and (min-width: 250px) and (max-width: 400px) {
   body {
     overflow-x: hidden;
@@ -352,13 +371,13 @@ hr {
   .dark-theme .bg {
     width: 100%;
     height: 1050px;
-    background-image: url("../Images/Untitled-15.jpg");
+    background-image: url("../Images/sm-bg-dark-good.jpg");
     background-size: contain;
   }
   .light-theme .bg {
     width: 100%;
     height: 1050px;
-    background-image: url("../Images/Untitled-0.jpg");
+    background-image: url("../Images/sm-bg-light-good.jpg");
     background-size: contain;
   }
   .side-width {
@@ -372,27 +391,30 @@ hr {
     display: none;
   }
   .navpar {
-    margin: 0 20px;
+    margin: 10px 20px;
   }
   .navpar .logo img {
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 31px;
+  }
+  .navpar .nav-icons {
+    margin-top: 1px;
   }
   .navpar .nav-icons .Menu-icon {
-    width: 35px;
+    width: 30px;
   }
   .navpar .nav-icons .user-icon {
-    width: 32px;
+    width: 27px;
     margin-left: 10px;
   }
   .home-content {
-    width: 90%;
+    width: 100%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .home-content p {
     font-size: 14px;
-    margin: 30px 0;
+    margin: 25px 0;
   }
   .home-content .btn-regester {
     width: 130px;
@@ -419,7 +441,8 @@ hr {
     padding: 100px 10px;
   }
   .featrues .featrues-card {
-    width: 80%;
+    width: 70%;
+    margin-bottom: 10px;
   }
   .featrues .featrues-card .card-content {
     padding: 20px 15px;
@@ -429,39 +452,66 @@ hr {
     height: 350px;
     margin: 0 auto;
   }
-  .video-con img {
-    -webkit-transform: translateY(-35%);
-            transform: translateY(-35%);
-  }
   .feedback .feedback-card {
-    width: 90%;
-    height: 200px;
+    width: 95%;
+    height: 220px;
     margin-bottom: 30px;
-    padding: 30px 30px;
+    padding: 25px 30px;
   }
   .feedback .feedback-avatar {
-    width: 50px;
+    width: 40px;
   }
   .feedback .feedback-detial h5 {
     font-size: 14px;
     margin: 5px 10px 0 0;
   }
   .feedback .feedback-comment {
-    padding: 15px 10px;
+    width: 100%;
+    left: -8px;
     font-size: 14px;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-text {
+    padding: 25px 0 5px 5px;
+  }
+  footer .footer-text h6 {
+    text-align: center;
+    font-size: 16px;
+  }
+  footer .footer-icons {
+    padding: 0px 80px;
+  }
+  footer .footer-icons img {
+    width: 45px;
+    margin: 0 0px;
+  }
+  footer .footer-icons #facebook {
+    width: 39px;
+    margin: 3px 0 0 3px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 330px) {
+  .home-content {
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 600px) {
   .dark-theme .bg {
     width: 100%;
     height: 1050px;
-    background-image: url("../Images/Untitled-15.jpg");
+    background-image: url("../Images/sm-bg-dark-good.jpg");
     background-size: contain;
   }
   .light-theme .bg {
     width: 100%;
     height: 1050px;
-    background-image: url("../Images/Untitled-0.jpg");
+    background-image: url("../Images/sm-bg-light-good.jpg");
     background-size: contain;
   }
   .side-width {
@@ -478,7 +528,7 @@ hr {
     margin: 0 25px;
   }
   .navpar .logo img {
-    width: 130px;
+    width: 175px;
     height: 30px;
   }
   .navpar .nav-icons .Menu-icon {
@@ -531,25 +581,58 @@ hr {
     height: 350px;
     margin: 0 auto;
   }
-  .video-con img {
-    -webkit-transform: translateY(-35%);
-            transform: translateY(-35%);
-  }
   .feedback .feedback-card {
     width: 80%;
-    height: 200px;
+    height: 220px;
     padding: 30px 30px;
   }
   .feedback .feedback-avatar {
     width: 50px;
   }
   .feedback .feedback-comment {
-    padding: 20px 0px;
     font-size: 15px;
   }
   .feedback h5 {
     font-size: 16px;
     margin: 5px 10px 0 0;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-text {
+    padding: 25px 0 10px 5px;
+  }
+  footer .footer-text h6 {
+    text-align: center;
+    font-size: 16px;
+  }
+  footer .footer-icons {
+    padding: 0px 100px;
+  }
+  footer .footer-icons img {
+    width: 45px;
+    margin: 0 0px;
+  }
+  footer .footer-icons #facebook {
+    width: 39px;
+    margin: 3px 0 0 3px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 480px) {
+  .feedback .feedback-card {
+    width: 85%;
+    height: 220px;
+    padding: 30px 30px;
+  }
+  .feedback .feedback-avatar {
+    width: 50px;
+  }
+  .feedback .feedback-comment {
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -559,13 +642,13 @@ hr {
   .dark-theme .bg {
     width: 100%;
     height: 1050px;
-    background-image: url("../Images/Untitled-15.jpg");
+    background-image: url("../Images/sm-bg-dark-good.jpg");
     background-size: cover;
   }
   .light-theme .bg {
     width: 100%;
     height: 1050px;
-    background-image: url("../Images/Untitled-0.jpg");
+    background-image: url("../Images/sm-bg-light-good.jpg");
     background-size: cover;
   }
   .links {
@@ -573,7 +656,7 @@ hr {
   }
   .navpar .logo img {
     width: 200px;
-    height: 30px;
+    height: 48px;
   }
   .navpar .nav-icons .Menu-icon {
     width: 50px;
@@ -607,7 +690,7 @@ hr {
     padding: 150px 20px;
   }
   .feedback .feedback-card {
-    width: 70%;
+    width: 90%;
     height: 250px;
   }
   .feedback .feedback-avatar {
@@ -617,21 +700,45 @@ hr {
     font-size: 18px;
   }
   .feedback .feedback-comment {
-    padding: 5px 60px;
+    top: 20px;
     font-size: 16px;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-text {
+    padding: 25px 0 10px 5px;
+  }
+  footer .footer-text h6 {
+    text-align: center;
+    font-size: 16px;
+  }
+  footer .footer-icons {
+    padding: 0px 0px;
+  }
+  footer .footer-icons img {
+    width: 45px;
+    margin: 0 0px;
+  }
+  footer .footer-icons #facebook {
+    width: 39px;
+    margin: 3px 0 0 3px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .dark-theme .bg {
     width: 100%;
     height: 1250px;
-    background-image: url("../Images/Untitled-15.jpg");
+    background-image: url("../Images/sm-bg-dark-good.jpg");
     background-size: cover;
   }
   .light-theme .bg {
     width: 100%;
     height: 1250px;
-    background-image: url("../Images/Untitled-0.jpg");
+    background-image: url("../Images/sm-bg-light-good.jpg");
     background-size: cover;
   }
   .home-page {
@@ -686,21 +793,28 @@ hr {
     font-size: 18px;
   }
   .feedback .feedback-comment {
-    padding: 5px 60px;
+    top: 20px;
     font-size: 16px;
+  }
+  footer .footer-icons img {
+    padding-top: 7px;
+    width: 45px;
+  }
+  footer .footer-icons #facebook {
+    width: 39px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .dark-theme .bg {
     width: 100%;
     height: 1400px;
-    background-image: url("../Images/Untitled-15.jpg");
+    background-image: url("../Images/sm-bg-dark-good.jpg");
     background-size: cover;
   }
   .light-theme .bg {
     width: 100%;
     height: 1400px;
-    background-image: url("../Images/Untitled-0.jpg");
+    background-image: url("../Images/sm-bg-light-good.jpg");
     background-size: cover;
   }
   .home-page {
@@ -726,7 +840,6 @@ hr {
     font-size: 18px;
   }
   .feedback .feedback-comment {
-    padding: 5px 60px;
     font-size: 16px;
   }
 }
@@ -735,5 +848,8 @@ hr {
     width: 600px;
     -webkit-transform: translateY(-30%);
             transform: translateY(-30%);
+  }
+  .featrues .featrues-card{
+    width: 243px;
   }
 }

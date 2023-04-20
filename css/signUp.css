@@ -37,7 +37,7 @@ body {
   height: 950px;
   position: absolute;
   background-repeat: no-repeat;
-  background-image: url("../Images/pexels-hert-niks-3224156 (2) copy.jpg");
+  background-image: url("../Images/sign-light-bg.jpg");
 }
 
 .form-container-signup {
@@ -77,17 +77,28 @@ body {
   width: 80%;
   margin-top: 30px;
 }
+.form-container-signup .form .error {
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #f8d7da;
+  color: #58151c;
+  padding: 7px 10px;
+  height: 40px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
 .form-container-signup .label {
   color: var(--primary_text);
   font-weight: 300;
   margin-left: 5px;
 }
-.form-container-signup #username, .form-container-signup #password {
+.form-container-signup #username, .form-container-signup #password, .form-container-signup #phoneNumber, .form-container-signup #email {
   width: 100%;
   height: 35px;
-  background-color: var(--secondary_text);
+  background-color: #e4e2e2;
   margin-top: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-radius: 10px;
   border: 0;
 }
@@ -110,29 +121,33 @@ body {
   text-decoration: none;
   color: var(--primary_text);
   position: relative;
-  top: 80px;
+  top: 110px;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 @media only screen and (min-width: 250px) and (max-width: 400px) {
   body {
     overflow-x: hidden;
   }
+  #error-con {
+    height: 650px;
+  }
   .dark-theme .bg {
     width: 100%;
-    height: 850px;
+    height: 950px;
     background-image: url("../Images/signin-dark-mobile.jpg");
     background-size: cover;
   }
   .light-theme .bg {
     width: 100%;
-    height: 850px;
+    height: 950px;
     background-image: url("../Images/signIn-mobile.jpg");
     background-size: cover;
   }
   .form-container-signup {
-    width: 90%;
-    height: 700px;
+    width: 93%;
+    height: 730px;
     position: relative;
     top: 100px;
   }
@@ -160,7 +175,6 @@ body {
   .form-container-signup #username, .form-container-signup #password {
     width: 100%;
     height: 30px;
-    background-color: var(--secondary_text);
     margin-top: 8px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -172,6 +186,9 @@ body {
     width: 120px;
     margin: 0 auto;
     top: 60px;
+  }
+  #error-con {
+    height: 800px;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 600px) {
@@ -191,7 +208,7 @@ body {
     background-size: cover;
   }
   .form-container-signup {
-    width: 80%;
+    width: 360px;
     position: relative;
     top: 100px;
     height: 800px;
@@ -212,9 +229,11 @@ body {
   }
   .form-container-signup #submit-btn {
     position: relative;
-    top: 20px;
     width: 120px;
     margin: 0 auto;
+  }
+  #error-con {
+    height: 830px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -234,7 +253,7 @@ body {
     background-size: cover;
   }
   .form-container-signup {
-    width: 65%;
+    width: 370px;
     position: relative;
     top: 100px;
     height: 800px;
@@ -250,14 +269,17 @@ body {
   .form-container-signup .form-icon img {
     width: 70px;
   }
-  .form-container-signup #username, .form-container-signup #password {
-    width: 90%;
+  .form-container-signup #username, .form-container-signup #password, .form-container-signup #phoneNumber, .form-container-signup #email {
+    width: 100%;
   }
   .form-container-signup #submit-btn {
     position: relative;
-    top: 20px;
     width: 120px;
     margin: 0 auto;
+  }
+
+  #error-con {
+    height: 830px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -277,7 +299,7 @@ body {
     background-size: cover;
   }
   .form-container-signup {
-    width: 50%;
+    width: 360px;
     position: relative;
     top: 100px;
     height: 800px;
@@ -293,14 +315,17 @@ body {
   .form-container-signup .form-icon img {
     width: 70px;
   }
-  .form-container-signup #username, .form-container-signup #password {
-    width: 90%;
+  .form-container-signup #username, .form-container-signup #password, .form-container-signup #phoneNumber, .form-container-signup #email {
+    width: 100%;
   }
   .form-container-signup #submit-btn {
     position: relative;
-    top: 20px;
     width: 120px;
     margin: 0 auto;
+  }
+
+  #error-con {
+    height: 830px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -320,7 +345,7 @@ body {
     background-size: cover;
   }
   .form-container-signup {
-    width: 40%;
+    width: 390px;
     position: relative;
     top: 150px;
     height: 800px;
@@ -336,14 +361,17 @@ body {
   .form-container-signup .form-icon img {
     width: 70px;
   }
-  .form-container-signup #username, .form-container-signup #password {
-    width: 90%;
+  .form-container-signup #username, .form-container-signup #password, .form-container-signup #phoneNumber, .form-container-signup #email {
+    width: 100%;
   }
   .form-container-signup #submit-btn {
     position: relative;
-    top: 20px;
     width: 120px;
     margin: 0 auto;
+  }
+
+  #error-con {
+    height: 830px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -360,7 +388,7 @@ body {
     background-size: cover;
   }
   .form-container-signup {
-    width: 35%;
+    width: 380px;
     top: 200px;
   }
   .form-container-signup .form {
@@ -372,8 +400,15 @@ body {
   }
   .form-container-signup #submit-btn {
     position: relative;
-    top: 20px;
     width: 120px;
     margin: 0 auto;
+  }
+
+  .form-container-signup #username, .form-container-signup #password, .form-container-signup #phoneNumber, .form-container-signup #email {
+    width: 100%;
+  }
+
+  #error-con {
+    height: 830px;
   }
 }

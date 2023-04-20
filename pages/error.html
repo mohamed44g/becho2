@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .dark-theme {
+        --bg: rgba(17 17 17 / 94);
+        --primary_text: #fff;
+        --secondary_text: #858E96;
+        --boxs: #333;
+        background-color: var(--bg);
+    }
+
+    .dark-theme .error-img {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
+    }
+
+    .light-theme .error-img {
+        filter: invert(18%) sepia(1%) saturate(3208%) hue-rotate(63deg) brightness(102%) contrast(93%);
+    }
+
+    .light-theme {
+        --bg: #eee;
+        --primary_text: #000;
+        --secondary_text: #333;
+        --home-text: #fff;
+        --home-text-secondary: #EAE6E6;
+        --boxs: #fff;
+        background-color: var(--bg);
+    }
+
+    .con {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 120px;
+    }
+
+    .error-img {
+        width: 18%;
+        margin-bottom: 10px;
+    }
+
+    .error h5 {
+        font-size: 20px;
+        color: var(--primary_text);
+    }
+
+    .error button {
+        width: 100px;
+        height: 35px;
+        background-color: #F78121;
+        color: #fff;
+        font-weight: 700;
+        font-size: 19px;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .navpar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-top: 35px;
+      }
+      .navpar .logo img {
+        width: 230px;
+        height: 64px;
+        -webkit-filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
+                filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
+      }
+      .navpar .nav-icons .btn-back {
+        width: 100px;
+        height: 35px;
+        background-color: #F78121;
+        border-radius: 5px;
+        border: 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        top: 17px;
+        left: 20px;
+      }
+      
+      hr {
+        opacity: 0.3;
+      }
+
+      @media only screen and (min-width: 250px) and (max-width: 400px) {
+        .con {
+          width: 95%;
+        }
+
+        .navpar {
+          margin-top: 20px;
+          margin-bottom: 7px;
+        }
+        .navpar .logo img {
+          width: 120px;
+          height: 35px;
+        }
+
+        .navpar .nav-icons .btn-back {
+          width: 50px;
+          height: 20px;
+          font-weight: 300;
+          position: relative;
+          top: 7px;
+          font-size: small;
+        }
+        .error button {
+            width: 70px;
+            height: 28px;
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        .error-img {
+            width: 35%;
+        }
+    
+        .error h5 {
+            font-size: 15px;
+            font-weight: 400;
+        }
+      }
+      @media only screen and (min-width: 400px) and (max-width: 600px) {
+        .con {
+            width: 95%;
+          }
+  
+          .navpar {
+            margin-top: 20px;
+            margin-bottom: 7px;
+          }
+          .navpar .logo img {
+            width: 120px;
+            height: 35px;
+          }
+  
+          .navpar .nav-icons .btn-back {
+            width: 50px;
+            height: 20px;
+            font-weight: 300;
+            position: relative;
+            top: 7px;
+            font-size: small;
+          }
+          .error button {
+              width: 70px;
+              height: 28px;
+              font-weight: 300;
+              font-size: 15px;
+          }
+  
+          .error-img {
+              width: 35%;
+          }
+      
+          .error h5 {
+              font-size: 15px;
+              font-weight: 400;
+          }
+      }
+      @media only screen and (min-width: 600px) and (max-width: 768px) {
+        .con {
+            width: 95%;
+          }
+  
+          .navpar {
+            margin-top: 20px;
+            margin-bottom: 7px;
+          }
+          .navpar .logo img {
+            width: 120px;
+            height: 35px;
+          }
+  
+          .navpar .nav-icons .btn-back {
+            width: 50px;
+            height: 20px;
+            font-weight: 300;
+            position: relative;
+            top: 7px;
+            font-size: small;
+          }
+          .error button {
+              width: 70px;
+              height: 28px;
+              font-weight: 300;
+              font-size: 15px;
+              position: relative;
+              top: 10px;
+          }
+  
+          .error-img {
+              width: 25%;
+          }
+      
+          .error h5 {
+              font-size: 15px;
+              font-weight: 400;
+          }
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        .con {
+            width: 95%;
+          }
+  
+          .navpar {
+            margin-top: 20px;
+            margin-bottom: 7px;
+          }
+          .navpar .logo img {
+            width: 140px;
+            height: 35px;
+          }
+  
+          .navpar .nav-icons .btn-back {
+            width: 70px;
+            height: 25px;
+            font-weight: 300;
+            position: relative;
+            top: 7px;
+            font-size: small;
+          }
+          .error button {
+              width: 70px;
+              height: 28px;
+              font-weight: 300;
+              font-size: 15px;
+          }
+  
+          .error-img {
+              width: 20%;
+          }
+      
+          .error h5 {
+              font-size: 15px;
+              font-weight: 400;
+          }
+      }
+</style>
+
+<body class="dark-theme">
+    <script>
+        let theme = localStorage.getItem("theme");
+        if (theme != null) {
+            changeTheme(theme);
+        }
+
+        function changeTheme(theme) {
+            if (theme == "dark") {
+                document.body.className = "dark-theme";
+
+            } else {
+                document.body.className = "light-theme";
+            }
+        }
+        // var xmlhttp = new XMLHttpRequest();
+        // xmlhttp.open("GET", `../index.php?id=${parseInt(id)}`,true);
+        // xmlhttp.send();
+
+        // var xmlhttp = new XMLHttpRequest();
+        // xmlhttp.open("POST", "../index.php",true);
+        // xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        // xmlhttp.send("id = 10");
+
+    </script>
+    <div class="con">
+        <div class="navpar">
+            <div class="logo">
+                <img src="../Images/H Logotype Orange.svg" alt="logo">
+            </div>
+    
+            <div class="nav-icons">
+                <a href="../index.html"><button class="btn-back">عودة</button></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="error">
+            <img class="error-img" src="../Images/danger-error-svgrepo-com.svg" alt="">
+            <h5>انت غير مسجل ف الموقع سجل الان</h5>
+            <a href="#"><button class="error-btn">سجل الان</button></a>
+        </div>
+    </div>
+</body>
+</html>

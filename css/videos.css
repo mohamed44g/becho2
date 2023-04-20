@@ -10,6 +10,10 @@ body {
   --boxs: #333;
   background-color: var(--bg);
 }
+.dark-theme .Menu-icon {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(284deg) brightness(109%) contrast(101%);
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -99,7 +103,12 @@ body {
   background-color: #818181;
   border-radius: 15px;
   border: 0;
-  margin-left: 10px;
+  text-align: center;
+}
+.mood .btn-dark span, .mood .btn-light span {
+  position: relative;
+  top: -8px;
+  left: 5px;
 }
 .mood .active-btn {
   display: none;
@@ -116,6 +125,10 @@ body {
 }
 .light-theme .closebtn {
   color: var(--primary_text);
+}
+.light-theme .Menu-icon {
+  -webkit-filter: invert(0%) sepia(83%) saturate(7500%) hue-rotate(356deg) brightness(82%) contrast(115%);
+          filter: invert(0%) sepia(83%) saturate(7500%) hue-rotate(356deg) brightness(82%) contrast(115%);
 }
 
 .con {
@@ -147,8 +160,10 @@ body {
   margin-top: 35px;
 }
 .navpar .logo img {
-  width: 277px;
-  height: 35px;
+  width: 250px;
+  height: 64px;
+  -webkit-filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
+          filter: invert(53%) sepia(80%) saturate(1433%) hue-rotate(347deg) brightness(101%) contrast(94%);
 }
 .navpar .nav-icons .btn-back {
   width: 100px;
@@ -182,11 +197,13 @@ hr {
   margin-right: auto;
   background-color: var(--boxs);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .video-con .video img {
   width: 96px;
-  padding-top: 250px;
-  padding-right: 45%;
+
 }
 
 @media only screen and (min-width: 250px) and (max-width: 400px) {
@@ -204,11 +221,11 @@ hr {
     margin-bottom: 7px;
   }
   .navpar .logo img {
-    width: 120px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
   }
   .navpar .nav-icons .Menu-icon {
-    width: 40px;
+    width: 35px;
   }
   .navpar .nav-icons .btn-back {
     width: 70px;
@@ -221,15 +238,6 @@ hr {
   .video-con .video {
     width: 100%;
     height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--boxs);
-    border-radius: 10px;
-  }
-  .video-con .video img {
-    width: 96px;
-    padding-top: 100px;
-    padding-right: 32%;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 600px) {
@@ -248,7 +256,7 @@ hr {
   }
   .navpar .logo img {
     width: 150px;
-    height: 30px;
+    height: 40px;
   }
   .navpar .nav-icons .Menu-icon {
     width: 40px;
@@ -264,15 +272,6 @@ hr {
   .video-con .video {
     width: 100%;
     height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--boxs);
-    border-radius: 10px;
-  }
-  .video-con .video img {
-    width: 96px;
-    padding-top: 100px;
-    padding-right: 36%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -288,7 +287,7 @@ hr {
   }
   .navpar .logo img {
     width: 150px;
-    height: 30px;
+    height: 40px;
   }
   .navpar .nav-icons .Menu-icon {
     width: 40px;
@@ -302,15 +301,6 @@ hr {
   .video-con .video {
     width: 100%;
     height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--boxs);
-    border-radius: 10px;
-  }
-  .video-con .video img {
-    width: 96px;
-    padding-top: 100px;
-    padding-right: 42%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -343,11 +333,6 @@ hr {
     width: 100%;
     height: 400px;
   }
-  .video-con .video img {
-    width: 96px;
-    padding-top: 150px;
-    padding-right: 45%;
-  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .con {
@@ -378,10 +363,5 @@ hr {
   .video-con .video {
     width: 100%;
     height: 400px;
-  }
-  .video-con .video img {
-    width: 96px;
-    padding-top: 150px;
-    padding-right: 45%;
   }
 }

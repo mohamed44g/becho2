@@ -21,8 +21,8 @@
 
             <a href="../index.html"><button class="btn-back-side">عودة</button></a>
             <div class="mood">
-                <button class="btn-dark active-btn">dark <img src="../Images/icon-moon.svg" alt="icon"></button>
-                <button class="btn-light">light <img src="../Images/icon-sun.svg" alt="icon"></button>
+                <button class="btn-dark active-btn"><span>dark</span><img src="../Images/icon-moon.svg" alt="icon"></button>
+                <button class="btn-light"><span>light</span> <img src="../Images/icon-sun.svg" alt="icon"></button>
             </div>
         </div>
     </div>
@@ -30,12 +30,12 @@
     <div class="con">
         <div class="navpar">
             <div class="logo">
-                <img src="../Images/H Logotype Orange copy.png" alt="logo">
+                <img src="../Images/H Logotype Orange.svg" alt="logo">
             </div>
     
             <div class="nav-icons">
                 <a href="../index.html"><button class="btn-back">عودة</button></a>
-                <img onclick="openNav()" class = "Menu-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVR4nO3ZQQoCMRBFwRxPPXN+5yYjiPdQZqubAYNBqYLepyGLPNIaAAAAByS5JLlW1eOXZ9+h934+svBt9WEnzt3Cr/ZrkGT7gyu9jTFObwsCAPAtUUu1/F2slmpiHna1BADAHFFLtbp41FKppfK3BAAA0D7xBH8Vz6KPQsKFAAAAAElFTkSuQmCC">
+                <img onclick="openNav()" class = "Menu-icon" src="../Images/icons8-menu-96-_3_.svg" alt="menu-icon">
             </div>
         </div>
 
@@ -45,9 +45,8 @@
             <div class="Questions-header">
                 <p>12 من 25</p>
                 <div>
-                    <span class = "time" dir="ltr">20 : 00</span>
-                    <img id = "icon-white" src="data:image/png;base64,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" alt="icon">
-                    <img id = "icon-black" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAGkElEQVR4nO2d248URRTGKytqVIx3BLygsmqchJmt7+sZNht0UN/UJyOIaCCKXJ5MSHxXCcYYEUFAJdHIxaAP+h9gUFZFRSHyAEQjrj6AQfAR2dXdMScUCSFTPd27Xd1ds/VLOtnspc+pc6ZOnao6VatUIBAIBAKBQCAQCAQCgUAgUAJItrJ4im6HtzA4IDhgUsPQA4IDJjUMPSAQCAQmNY1G49YoihaRXEPyEwAHAPxK8m+SwwD+M18fJ7mf5GcAXtdaP0ly9kTlVyqVy9Qko0dr/TCA90j+nMFA/Lt516PNZnNKGkUqlcpUkoMkX1bdTq1Wu4XkqwD+yCr7ufgB8CeANxuNxp0pjH/+77vTCVEU3UVyK8mzrgzfxhH/Atiltb4vofG7zwnVavUqidUkR/IyfDtHkNxC8sYExu8eJwB4TGIzCzJ8m+ckyScSGF+eQW8HZlGc5Fskx1IYZ1QyH5IbAKwgOV/C1pw5c66T98kjX5tQNt/8zkYAB+VvUzrieALjT1W+DrIAvk9qdJK7SS7p7++/frwy6/X6DSSXkvx8HM7oHuNHUXQvyaEEMfkMyc21Wu2OrHWQd0q8B/DPpDI+SZgYG9fAMQAf1Ov16TnoM4PkthRh0PtPfifjH46iaCBv3UjOA3A0gQPmKx/RWs8k+VuHkLOjyE+XyXp2dtDxhNZ6lvIJyUw6DLgyIL4w3vfb3juB963uMEgf8ioMmVTT1hiZeD01wfe3snSAeefiuEkhgPeVR5Ms2wA3OlHju3LABU6w9gSt9eOq7MsLHWa44w47eTjggnBk0/9krVa7VpUVs7Zj68K7spJDhw4QJDmIacd6VUbMUoAthh6W3uGLAyqVytSYFHVE0mtVNsyScjuFx7TWD2Qsq+XSAUbGvJixbJsq27ahbT3fRfbAHBwgANgek8ndrsqC7GRZjH/GxfICc3KAmUzaNoreUCWhx7aNCGCTC4HMyQECgHctbTuxYMGCS1TRyAa6xSCjLlY183aA7B/b5gbSdlU0puKgnUF2u5LJHB0gANhjkblVFU1M6ciSbnFAFEXPWWT+4kpmUsVus4Uf2Y3qFgf09fXdZEtJxQaqKGRdxzJAHXAst5WnA4zMnywOWORSbielXrEYY4Mrmc1mc4rNAWkr39IA4G2L3DWqKKRW09IDlruQV6/Xp5Pca3OA/KxarU5zIZvkSktbP3YhL6lSP1q6ZdNRScs3McY/b5CvSF6atXySD1pk/pC1rDRKtd1ydJH/41y9Tyvh87yjxcZ2soZUUQA41U4pFxkQgK+TOkB6QdbypXzRIutU1rLSKDXcTikXpXs8dwYgqQNOZy2/t7f3cou8YVUUwQEUB5wtzAFlDUEkB/MKQST/ylpWWQfh5SkcsCyvQRjAMTVZ0lAk6wWDOaeh+7OWlcVEbIULeXPnzr25w0TsS4cTsVWuiw2yXIrY2IVLEZssDnhJFYU5PtpOqYMu5dLiAMcyD1naulAVfLKxnTFGLzx35bsDqtXqNNtytNhAlXRDZmm3OIDkMovMI6pobJvWcixIdQmwb0luLoNyD+W9KZ8nJv8fLfPhDWtZipzJUp4De9GBrIL2qJIXZsmBuBnKUxrxFX9rVVkQI8ecPvxQeQrJjyxtOlt49pOiq46VJVamAcD9McW55QutpoKs7f6AlHr7dMZqYGDg6pj0eri0yQXJ12w5uqwbKf9DT0vGO1XyI0pxJ+JXq5ID4MUY/WX5/UpVZuRmqg6H9BarkqK1fiZGd/n+I8oH5BxVzKdoBMDTqpzGH4nRe53yBVPD821MY8bKFI5wLuzE3R2xz8Umj1PkdIls18U0qgXgU5LXFJntyIZKBx2PeTuZrNfr93S6rAPAUcm589ZNtk0T3Mp4sq+v727lMymuq9kuvSan5YWdCa6rEZ2hugHTE2JvTqGZ4pN8J8m1kuNZ1TSz9Y63M0rY8f6TbxkTvkvghJa5J26P1vpZORwxwZ2sZQC+SHFl2T5vY37C0pL1KS/tG5PDEaY+f6UpD5ktd8mdv7RPCsG01r1mb2KV+d1D45CzzrtsZwKTtaEUxnH9DHkzycqK/v7+K+QS1DxvzG3zyMRro08LhZmjtZ5l7vk8k6Ph5db1HRK2im5/2QbptY5v1B0SGXmkuz7TIxs45k7nIxkYXd6xxdSrlmMP1ye01jPlnzFICaAciJNiWPkHDnIIw2wASTg5bf6pg/xsl/ndheGTHggEAoFAIBAIBAIBdTH/A4ix5K/l4ZO8AAAAAElFTkSuQmCC" alt="icon">
+                    <span class = "time" dir="ltr"><span id = "minute">1</span> : <span id = "second">60</span></span>
+                    <img id = "icon" src="../Images/clock-svgrepo-com.svg" alt="icon">
                 </div>
             </div>
 
@@ -89,6 +88,39 @@
     <script>
         const dark = document.querySelector(".btn-dark");
         const light = document.querySelector(".btn-light");
+        const second = document.getElementById("second");
+        const minute = document.getElementById("minute");
+
+        let minutes = minute.innerHTML;
+        let seconds = second.innerHTML;
+
+        let timerSeconds = setInterval(function () {
+            if (second.innerHTML != 0) {
+                second.innerHTML--;
+            }
+            else {
+                second.innerHTML = "60";
+            }
+
+            if (minute.innerHTML == 0 && second.innerHTML == 0) {
+                clear();
+            }
+
+        },1000);
+
+        let timerMinutes = setInterval(function () {
+            if (minute.innerHTML != 0) {
+                minute.innerHTML--;
+            }
+        },60000)
+
+        function clear() {
+            clearInterval(timerSeconds,timerMinutes);
+            console.log("done");
+        }
+
+
+        
     
         let theme = localStorage.getItem("theme");
         if (theme != null) {
